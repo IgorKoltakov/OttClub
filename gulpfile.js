@@ -42,6 +42,9 @@ gulp.task("sass", function () {
 gulp.task("html", function () {
   return gulp.src("*.html").pipe(gulp.dest("build"));
 });
+gulp.task("img", function () {
+  return gulp.src("src/**/*").pipe(gulp.dest("build/src"));
+});
 
 gulp.task("serve", function () {
   bs.init({
@@ -50,4 +53,5 @@ gulp.task("serve", function () {
 
   gulp.watch("scss/**/*.scss", gulp.series("sass"));
   gulp.watch("*.html", gulp.series("html"));
+  gulp.watch("src/**/*", gulp.series("img"));
 });

@@ -9,10 +9,449 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>OTT Club</title>
   </head>
   <body>
-    <header></header>
+    <div class="bg">
+      <header>
+        <div class="container-lg">
+          <div class="row navbar">
+            <div class="col-8 logo">
+              <img src="./src/icons/Logo.svg" alt="logo" />
+            </div>
+            <div class="col-4 info d-flex justify-content-end">
+              <img class="social" src="./src/icons/fb.svg" alt="facebook" />
+              <img
+                class="social"
+                src="./src/icons/telegram.svg"
+                alt="telegram"
+              />
+              <button type="button" class="btn log register">
+                Регистрация
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-light log singin d-flex"
+                style="
+                  width: 120px;
+                  padding: 16px 32px;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                Войти
+              </button>
+            </div>
+          </div>
+          <div class="row header-block mt-5">
+            <div
+              class="col-lg-6 col-md-7 col-sm-12 col-12 block-content d-flex justify-content-center flex-column"
+            >
+              <h1>Более 270 телеканалов в прямом эфире</h1>
+              <img
+                src="./src/images/header-right-picture.png"
+                alt=""
+                class="imgHiden"
+              />
+              <p class="pt-4">
+                Национальные, познавательные, детские, кино, спортивные,
+                новостные и многие другие каналы
+              </p>
+              <button type="button" class="btn btn-danger mt-5 btn-test">
+                Протестировать 7 дней бесплатно
+              </button>
+            </div>
+            <div class="col-lg-6 col-md-5 col-sm-12 col-12 picture">
+              <img src="./src/images/header-right-picture.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="container-lg">
+          <div class="row advantages">
+            <div class="col advantages-item">
+              <img src="./src/icons/gift.svg" alt="gift" />
+              <h3>Бесплатный тест</h3>
+              <p>7 дней бесплатного тестового просмотра</p>
+            </div>
+            <div class="col advantages-item">
+              <img src="./src/icons/DeviceDesktop.svg" alt="DeviceDesktop" />
+              <h3>5 устройств = 1 подписка</h3>
+              <p>Подключайте 5 устройств в одной подписке</p>
+            </div>
+            <div class="col advantages-item">
+              <img src="./src/icons/tv.svg" alt="tv" />
+              <h3>Архив трансляций</h3>
+              <p>Смотрите 7 дней телеэфира в записи</p>
+            </div>
+            <div class="col advantages-item">
+              <img src="./src/icons/PlanetEarth.svg" alt="PlanetEarth" />
+              <h3>Без привязки к месту</h3>
+              <p>Смотрите любимые фильмы и передачи в любой точке мира</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-lg pricing d-flex justify-content-center">
+          <div
+            class="row vector d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="col-12 d-flex justify-content-center align-items-center eye-block"
+            >
+              <img src="./src/icons/eye.svg" alt="eye" class="eye" />
+            </div>
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12 pricing-order">
+                <p style="text-transform: uppercase"><span>1€</span> / МЕСЯЦ</p>
+                <p>Покупая подписку более, чем на 6 месяцев</p>
+              </div>
+              <div
+                class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column"
+              >
+                <div class="pricing-item">
+                  <img src="./src/icons/done.svg" alt="done" />
+                  <p>Более 270 каналов</p>
+                </div>
+                <div class="pricing-item">
+                  <img src="./src/icons/done.svg" alt="done" />
+                  <p>127 FullHD каналов</p>
+                </div>
+                <div class="pricing-item">
+                  <img src="./src/icons/done.svg" alt="done" />
+                  <p>Режим Ultra TV Sport</p>
+                </div>
+                <div class="pricing-item">
+                  <img src="./src/icons/done.svg" alt="done" />
+                  <p>Архив каналов</p>
+                </div>
+                <div class="pricing-item">
+                  <img src="./src/icons/done.svg" alt="done" />
+                  <p>5 устройств</p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center tarif">
+              <div class="col-lg-8 onTarif">
+                <div class="input-group flex-column flex-sm-row mb-3">
+                  <input
+                    type="text"
+                    class="form-control mb-2 mb-sm-0"
+                    placeholder="Email"
+                  />
+                  <button class="btn btn-danger btn-onTarif" type="button">
+                    Подключить тариф
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 formHiden">
+                <input type="text" class="" placeholder="Email" />
+              </div>
+              <div class="col-12 formHiden">
+                <button class="btn btn-danger" type="button">
+                  Подключить тариф
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-lg chanel-list">
+          <div class="row">
+            <div class="col-11 title d-flex flex-row">
+              ТВ - каналы
+              <div>
+                <img src="./src/icons/lightning.svg" alt="lightning" />
+              </div>
+            </div>
+            <div class="col-12 discription">
+              <p>
+                Национальные, познавательные, детские, кино, спортивные,
+                новостные и многие <br />
+                другие телеканалы
+              </p>
+            </div>
+          </div>
+          <div class="row btn-list scroll-container">
+            <div class="col d-flex justify-content-between">
+              <button class="btn btn-danger btn-message">Популярные</button>
+              <button class="btn btn-outline-light btn-message">
+                Национальные
+              </button>
+
+              <button class="btn btn-outline-light btn-message">
+                Познавательные
+              </button>
+
+              <button class="btn btn-outline-light btn-message">Кино</button>
+
+              <button class="btn btn-outline-light btn-message">Спорт</button>
+
+              <button class="btn btn-outline-light btn-message">Детские</button>
+
+              <button class="btn btn-outline-light btn-message">
+                Музыкальные
+              </button>
+
+              <button class="btn btn-outline-light btn-message">
+                Новостные
+              </button>
+            </div>
+          </div>
+          <div class="row gy-5 chanel scroll-content">
+            <div class="col">
+              <img src="./src/icons/TVcard1+1.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="./src/icons/TVcardZoomHD.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="./src/icons/TVcardUkraine1.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="./src/icons/TVcardFilmHD.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="./src/icons/TVcardTET.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="./src/icons/TVcardInterHD.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="./src/icons/TVcardH.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="./src/icons/TVcardICTV.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="./src/icons/TVcardM1.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="./src/icons/TVcard2+2.svg" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="toggle-button d-flex flex-row justify-content-end align-items-center"
+              >
+                <p style="margin: 0">Показать все</p>
+                <img src="./src/icons/Group.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-lg devices">
+          <div class="row devices-block">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 block-content">
+              <h1>Смотрите на разных устройствах</h1>
+              <p class="pt-4">
+                Подключайте подписку FULL и смотрите любимые каналы на 5
+                устройствах, среди которых: телевизор, компьютер, планшет или
+                смартфон
+              </p>
+              <div class="imgHiden">
+                <img
+                  class="col-7 col-md-7 col-sm-12 col-12"
+                  src="./src/images/Devices.png"
+                  alt=""
+                />
+              </div>
+              <button type="button" class="btn btn-danger mt-5 btn-test">
+                Протестировать 7 дней бесплатно
+              </button>
+            </div>
+            <div class="col-7 col-md-7 col-sm-12 col-12 picture">
+              <img src="./src/images/Devices.png" alt="" />
+            </div>
+          </div>
+          <div class="row tvdevice" style="padding-top: 170px">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+              <img src="./src/icons/Lg.svg" alt="Lg" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+              <img src="./src/icons/iOS.svg" alt="iOS" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-4">
+              <img src="./src/icons/AndroidTV.svg" alt="AndroidTV" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-4">
+              <img src="./src/icons/Samsung.svg" alt="Samsung" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="container-lg question border-bottom border-1"
+          style="--bs-border-opacity: 0.5"
+        >
+          <h1>Популярные вопросы</h1>
+          <div class="row question-list d-flex justify-content-between">
+            <div
+              class="col-lg-5 col-md-5 col-sm-12 col-12 border-bottom border-1"
+              style="--bs-border-opacity: 0.5"
+            >
+              <div class="row d-flex justify-content-between">
+                <div class="col-10">
+                  <h1>Как подключить подписку OTTCLUB или продлить ее?</h1>
+                  <p>
+                    Какая необходима скорость соединения для стабильного
+                    просмотра каналов? Какая необходима скорость соединения для
+                    стабильного просмотра каналов?
+                  </p>
+                </div>
+                <div class="col-1">
+                  <img src="./src/icons/down.svg" alt="down" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 col-md-5 col-sm-12 col-12 border-bottom border-1"
+              style="--bs-border-opacity: 0.5"
+            >
+              <div class="row d-flex justify-content-between">
+                <div class="col-10">
+                  <h1>Как смотреть на телевизоре Samsung?</h1>
+                  <p></p>
+                </div>
+                <div class="col-1">
+                  <img src="./src/icons/down.svg" alt="down" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 col-md-5 col-sm-12 col-12 border-bottom border-1"
+              style="--bs-border-opacity: 0.5"
+            >
+              <div class="row d-flex justify-content-between">
+                <div class="col-10">
+                  <h1>Как смотреть одновременно на разных устройствах?</h1>
+                  <p></p>
+                </div>
+                <div class="col-1">
+                  <img src="./src/icons/down.svg" alt="down" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 col-md-5 col-sm-12 col-12 border-bottom border-1"
+              style="--bs-border-opacity: 0.5"
+            >
+              <div class="row d-flex justify-content-between">
+                <div class="col-10">
+                  <h1>Как посмотреть передачу, которая была в эфире ранее?</h1>
+                  <p></p>
+                </div>
+                <div class="col-1">
+                  <img src="./src/icons/down.svg" alt="down" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 col-md-5 col-sm-12 col-12 border-bottom border-1"
+            >
+              <div class="row d-flex justify-content-between">
+                <div class="col-10">
+                  <h1>
+                    Какая скорость соединения необходима для просмотра каналов?
+                  </h1>
+                  <p></p>
+                </div>
+                <div class="col-1">
+                  <img src="./src/icons/down.svg" alt="down" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+              <div class="row d-flex justify-content-between">
+                <div class="col-10">
+                  <h1>Как работает бесплатный тестовый период?</h1>
+                  <p></p>
+                </div>
+                <div class="col-1">
+                  <img src="./src/icons/down.svg" alt="down" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-lg footer">
+          <div class="row about d-flex justify-content-between">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+              <p>О нас</p>
+              <p>Пользовательское соглашение</p>
+              <p>Политика конфиденциальности</p>
+              <p>ТВ-Каналам</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+              <p>Проверка скорости</p>
+              <p>Правила оформления подписки</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-7 col-12 pl-92">
+              <h1>Помощь</h1>
+              <p>+442045772169 (Англия)</p>
+              <p>+420255708953 (Европа)</p>
+              <p>+97233751723 (Израиль)</p>
+              <p>support@ottclub.cc</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-12">
+              <p class="pt-5">Чат-поддержка</p>
+              <div class="footer-social">
+                <img
+                  src="./src/icons/logos_whatsapp.svg"
+                  alt="whatsapp"
+                  class="me-3 mt-2"
+                />
+                <img src="./src/icons/logos_telegram.svg" alt="telegram" />
+              </div>
+            </div>
+          </div>
+          <div class="row copypast gy-sm-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 img">
+              <img src="./src/icons/logos_visa.svg" alt="" />
+              <img src="./src/icons/masterCard.svg" alt="" />
+              <img src="./src/icons/FreeKassa.png" alt="" />
+              <img src="./src/icons/paysera.svg" alt="" />
+              <img src="./src/icons/sepa.svg" alt="" />
+            </div>
+            <div
+              class="col-6 col-md-12 col-sm-12 col-12 pt-5 pt-md-2 cp-content"
+            >
+              <p>
+                <img
+                  src="./src/icons/emojione-monotone_copyright.svg"
+                  alt=""
+                />2021-2022 COMPANY NAME
+              </p>
+              <img
+                src="./src/icons/Ellipse.svg"
+                alt=""
+                class="pe-3"
+                style="margin: 0 10px"
+                id="ellipse"
+              />
+              <p>Company number 1221514</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
